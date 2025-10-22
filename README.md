@@ -15,7 +15,7 @@ node app.js
 ## How to Build with Docker
 
 docker build -t <your-dockerhub-saikeerthi03>/nodejs-demo-app:latest .
-docker run -p 3000:3000 <your-dockerhub-saikeerthi03>/nodejs-demo-app:latest
+docker run -p 3000:3000 <your-dockerhub-saikeerthi03>/nodejs-demo-app:latest.
 
 
 ## CI/CD Automation
