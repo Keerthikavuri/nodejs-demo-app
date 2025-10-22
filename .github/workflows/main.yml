@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build Docker Image
-        run: docker build -t <your-dockerhub-saikeerthi03>/nodejs-demo-app:latest .
+        run: docker build -t saikeerthi03/nodejs-demo-app:latest .
       - name: Login to DockerHub
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u <your-dockerhub-username> --password-stdin
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u saikeerthi03 --password-stdin
       - name: Push Docker Image
-        run: docker push <your-dockerhub-saikeerthi03>/nodejs-demo-app:latest
+        run: docker push saikeerthi03/nodejs-demo-app:latest
